@@ -1,6 +1,7 @@
 import { NextPageContext } from "next";
 import { getSession, signOut } from "next-auth/react";
 import Navbar from "@/components/Navbar";
+import BillBoard from "@/components/BillBoard";
 
 import useCurrentUser from "@/hooks/useCurrentUser";
 
@@ -27,6 +28,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
+      <BillBoard />
     </>
   );
 }
